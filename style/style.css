@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+}
+
+body {
+    background-color: var(--Off-Black);
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    display: grid;
+    place-content: center;
+}
+
+.img {
+    height: 80px;
+    width: 80px;
+    place-self: center;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.card {
+    background-color: var(--Dark-Grey);
+    padding: 30px;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    max-width: 375px;
+}
+
+.profile_name {
+    text-align: center;
+}
+
+.profile_name h1 {
+    color: var(--White);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.profile_name h2 {
+    color: var(--Green);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 10px 0 10px 0;
+    border: none;
+    background-color: var(--Grey);
+    color: var(--White);
+    border-radius: 8px;
+    font-size: 12px;
+    display: block;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content p {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
